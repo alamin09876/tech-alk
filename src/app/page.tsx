@@ -3,6 +3,7 @@ import CompanyLogo from "./components/Home/CompanyLogo";
 import HeroSection from "./components/Home/HeroSection";
 import ImageAndText from "./components/Home/ImageAndText";
 import Innovation from "./components/Home/Innovation";
+import LegacySection from "./components/Home/LegacySection";
 import Technology from "./components/Home/Technology";
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       <CardSection />
       <Technology />
       <CompanyLogo />
+      <LegacySection />
     </div>
   );
 }

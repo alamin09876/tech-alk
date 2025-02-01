@@ -13,7 +13,7 @@ const HeroSection = () => {
 
   useEffect(() => {
     const checkScreenSize = () => {
-      setIsLarge(window.innerWidth >= 1024); // lg: breakpoint (1024px)
+      setIsLarge(window.innerWidth >= 1024);
     };
 
     checkScreenSize();
@@ -29,8 +29,8 @@ const HeroSection = () => {
 
   return (
     <div
-      className="relative bg-gradient-to-r from-blue-600 via-blue-400 to-blue-100 overflow-hidden w-full"
-      style={{ clipPath: "polygon(0% 0%, 100% 0%, 100% 77%, 0% 95%)" }}
+      className="relative bg-gradient-to-r from-blue-800 via-blue-500 to-blue-600 overflow-hidden w-full py-10"
+      style={{ clipPath: "polygon(0% 0%, 100% 0%, 100% 73%, 0% 95%)" }}
       onMouseMove={handleMouseMove}
     >
       <motion.div
@@ -75,7 +75,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           style={{
             clipPath: isLarge
-              ? "polygon(69% 0, 100% 0, 100% 89%, 0% 100%)"
+              ? "polygon(69% 0, 100% 0, 100% 96%, 0% 100%)"
               : "polygon(0 17%, 100% 0, 100% 83%, 0% 100%)",
           }}
         >

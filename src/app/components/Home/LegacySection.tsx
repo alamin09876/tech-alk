@@ -1,7 +1,9 @@
 "use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
+import { IoIosArrowForward } from "react-icons/io";
 import Wave1 from "../../../../public/assest/backgrounds/WaveLinesDesktop1.svg";
 import Wave2 from "../../../../public/assest/backgrounds/WaveLinesDesktop2.svg";
 import Wave3 from "../../../../public/assest/backgrounds/WaveLinesDesktop3.svg";
@@ -40,17 +42,25 @@ const LegacySection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="text-5xl lg:text-7xl font-bold">Legacy no longer</h2>
-          <p className="mt-4 text-lg">
+          <h2 className="text-5xl lg:text-7xl font-bold mt-20 lg:text-start text-center">
+            Legacy no longer
+          </h2>
+          <p className="mt-4 text-lg lg:text-start text-center">
             Talk to us to find out how we can transform your organisation for
             the future.
           </p>
           <motion.button
-            className="mt-6 bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg font-medium shadow-lg"
-            whileHover={{ scale: 1.05 }}
+            className="mt-6 bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 lg:w-44 w-full mx-auto rounded-lg font-medium shadow-lg transition-all duration-300"
+            whileHover={{ scale: 1.08 }}
             whileTap={{ scale: 0.95 }}
           >
-            Contact Us
+            <Link
+              href="/contact"
+              className="flex items-center justify-center space-x-2"
+            >
+              <span>Contact Us</span>
+              <IoIosArrowForward size={20} />
+            </Link>
           </motion.button>
         </motion.div>
       </div>

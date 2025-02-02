@@ -211,7 +211,8 @@ const Header = () => {
                   </NavigationMenuItem>
                 </NavigationMenuList>
               </NavigationMenu>
-
+            </nav>
+            <div>
               <Link
                 href="/contact"
                 className={`px-10 py-2 border rounded ${
@@ -225,7 +226,7 @@ const Header = () => {
                   <IoIosArrowForward />
                 </span>
               </Link>
-            </nav>
+            </div>
           </div>
 
           {/* Mobile menu */}

@@ -16,6 +16,7 @@
   padding: 1rem;
   color: #666;
   font-size: 1rem;
+  font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
   text-align: center;
@@ -24,7 +25,7 @@
 .swiper-slide-thumb-active .text-thumb {
   color: #0066ff;
   position: relative;
-  background-color: #e6f0ff;
+  background-color: #a8c8f7;
   border-radius: 2rem;
 }
 
@@ -40,6 +41,7 @@
   gap: 2rem;
   padding: 2rem;
   align-items: center;
+  padding: 40px;
 }
 
 .text-content {
@@ -55,7 +57,7 @@
 }
 
 .text-content h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: #1a1a1a;
   margin-bottom: 1.5rem;
   font-weight: bold;
@@ -86,6 +88,62 @@
   display: none;
 }
 
-.swiper-pagination {
-  display: none;
+/* Custom pagination styling */
+.custom-pagination {
+  display: none; /* Hide pagination by default */
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.pagination-bullet {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #a8c8f7;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pagination-bullet.active {
+  background: #0066ff;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .text-thumbs-swiper {
+    display: none;
+  }
+
+  .content-slide {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .text-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .category {
+    order: 1;
+  }
+
+  .text-content h2 {
+    order: 2;
+    font-size: 2rem;
+  }
+
+  .image-content {
+    order: 3;
+    height: 300px;
+  }
+
+  .text-content p {
+    order: 4;
+  }
+
+  .custom-pagination {
+    display: flex; /* Show pagination on small screens */
+  }
 }

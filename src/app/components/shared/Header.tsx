@@ -258,16 +258,18 @@ const Header = () => {
                 </span>
                 ENGLISH
               </Link>
-              {/* Contact Us button - Only visible in mobile menu */}
-              <Link
-                href="/contact"
-                className={`px-10 py-2 border text-white rounded mx-14 border-white hover:bg-white hover:text-blue-700 flex`}
-              >
-                Contact Us{" "}
-                <span className="mt-1 ml-4">
-                  <IoIosArrowForward />
-                </span>
-              </Link>
+              {/* Contact Us button - Centered in mobile menu */}
+              <div className="flex justify-center">
+                <Link
+                  href="/contact"
+                  className={`px-20 py-2 border text-white rounded border-white hover:bg-white hover:text-blue-700 flex items-center`}
+                >
+                  Contact Us{" "}
+                  <span className="mt-1 ml-4">
+                    <IoIosArrowForward />
+                  </span>
+                </Link>
+              </div>
             </nav>
           )}
         </div>

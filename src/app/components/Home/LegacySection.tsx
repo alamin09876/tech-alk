@@ -22,7 +22,6 @@ const LegacySection = () => {
       style={{ clipPath: "polygon(0 0, 100% 35%, 100% 100%, 0% 100%)" }}
       onMouseMove={handleMouseMove}
     >
-      {/* Background SVGs */}
       <motion.div
         className="absolute inset-0 w-full h-full overflow-hidden"
         animate={{ x: mousePos.x, y: mousePos.y }}
@@ -35,7 +34,6 @@ const LegacySection = () => {
       </motion.div>
 
       <div className="container mx-auto py-16 px-6 flex flex-col lg:flex-row items-center relative z-10">
-        {/* Left Text Content */}
         <motion.div
           className="lg:w-1/2"
           initial={{ opacity: 0, y: 20 }}

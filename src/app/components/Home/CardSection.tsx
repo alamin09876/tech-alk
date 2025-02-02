@@ -38,7 +38,6 @@ const cardData = [
 const CardSection = () => {
   return (
     <div className="container mx-auto my-10">
-      {/* Swiper for Small Devices */}
       <div className="md:hidden">
         <Swiper
           modules={[Autoplay, Pagination]}
@@ -76,7 +75,6 @@ const CardSection = () => {
         </Swiper>
       </div>
 
-      {/* Grid for Larger Devices */}
       <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         {cardData.map((card, index) => (
           <motion.div

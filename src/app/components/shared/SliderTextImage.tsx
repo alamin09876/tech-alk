@@ -57,7 +57,6 @@ const SliderTextImage = () => {
 
   return (
     <div className="slider-container">
-      {/* Text thumbnails at top */}
       <div className="space-y-4 mb-14">
         <h1 className="text-blue-500 font-bold text-lg text-center mt-10 uppercase">
           Technology Built for you
@@ -85,7 +84,6 @@ const SliderTextImage = () => {
         ))}
       </Swiper>
 
-      {/* Main content slider */}
       <Swiper
         thumbs={{ swiper: thumbsSwiper }}
         modules={[FreeMode, Thumbs, Autoplay]}
@@ -118,7 +116,6 @@ const SliderTextImage = () => {
         ))}
       </Swiper>
 
-      {/* Custom pagination outside of Swiper (only for small devices) */}
       <div className="custom-pagination">
         {slides.map((_, index) => (
           <span

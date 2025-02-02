@@ -73,7 +73,6 @@ const Header = () => {
               )}
             </Link>
 
-            {/* Hamburger menu for mobile */}
             <button onClick={toggleMenu} className="md:hidden text-2xl">
               {isMenuOpen ? (
                 <FaTimes
@@ -86,7 +85,6 @@ const Header = () => {
               )}
             </button>
 
-            {/* Desktop menu */}
             <nav className="hidden md:flex items-center space-x-6">
               <NavigationMenu isScrolled={false}>
                 <NavigationMenuList>
@@ -213,7 +211,6 @@ const Header = () => {
               </NavigationMenu>
             </nav>
 
-            {/* Contact Us button - Hidden on small screens */}
             <div className="hidden md:block">
               <Link
                 href="/contact"
@@ -231,7 +228,6 @@ const Header = () => {
             </div>
           </div>
 
-          {/* Mobile menu */}
           {isMenuOpen && (
             <nav className="md:hidden bg-blue-600 py-4">
               <Link
@@ -258,7 +254,7 @@ const Header = () => {
                 </span>
                 ENGLISH
               </Link>
-              {/* Contact Us button - Centered in mobile menu */}
+
               <div className="flex justify-center">
                 <Link
                   href="/contact"

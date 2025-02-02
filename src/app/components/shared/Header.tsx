@@ -38,7 +38,7 @@ const Header = () => {
   };
 
   return (
-    <div className="container mx-auto  ">
+    <div className="container mx-auto">
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           isScrolled ? "bg-white shadow-md" : "bg-transparent"
@@ -212,7 +212,9 @@ const Header = () => {
                 </NavigationMenuList>
               </NavigationMenu>
             </nav>
-            <div>
+
+            {/* Contact Us button - Hidden on small screens */}
+            <div className="hidden md:block">
               <Link
                 href="/contact"
                 className={`px-10 py-2 border rounded ${
@@ -250,12 +252,13 @@ const Header = () => {
               >
                 About Us
               </Link>
-              <Link href="#" className="py-2  text-white flex w-full mx-auto">
+              <Link href="#" className="py-2 text-white flex w-full mx-auto">
                 <span className="ml-48">
                   <FaGlobe className="mt-1 mr-2" />
                 </span>
                 ENGLISH
               </Link>
+              {/* Contact Us button - Only visible in mobile menu */}
               <Link
                 href="/contact"
                 className={`px-10 py-2 border text-white rounded mx-14 border-white hover:bg-white hover:text-blue-700 flex`}

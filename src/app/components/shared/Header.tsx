@@ -52,14 +52,25 @@ const Header = () => {
                 isScrolled ? "text-blue-600" : "text-white"
               }`}
             >
-              <Image
-                src={image}
-                alt="Finance Future"
-                className="h-[30px] w-[100px] mx-auto"
-                width={1000}
-                height={1000}
-                priority
-              />
+              {isScrolled ? (
+                <Image
+                  src={"/assest/logoBlue.svg"}
+                  alt="Finance Future"
+                  className="h-[30px] w-[100px] mx-auto"
+                  width={1000}
+                  height={1000}
+                  priority
+                />
+              ) : (
+                <Image
+                  src={image}
+                  alt="Finance Future"
+                  className="h-[30px] w-[100px] mx-auto"
+                  width={1000}
+                  height={1000}
+                  priority
+                />
+              )}
             </Link>
 
             {/* Hamburger menu for mobile */}

@@ -5,7 +5,6 @@
   padding: 2rem;
 }
 
-/* Text thumbnails styling */
 .text-thumbs-swiper {
   width: 100%;
   height: auto;
@@ -29,7 +28,6 @@
   border-radius: 2rem;
 }
 
-/* Main content slider styling */
 .content-swiper {
   width: 100%;
   height: auto;
@@ -82,15 +80,13 @@
   object-fit: cover;
 }
 
-/* Remove default Swiper styles */
 .swiper-button-next,
 .swiper-button-prev {
   display: none;
 }
 
-/* Custom pagination styling */
 .custom-pagination {
-  display: none; /* Hide pagination by default */
+  display: none;
   justify-content: center;
   margin-top: 1rem;
 }
@@ -109,7 +105,6 @@
   background: #0066ff;
 }
 
-/* Responsive styles */
 @media (max-width: 768px) {
   .text-thumbs-swiper {
     display: none;
@@ -144,6 +139,6 @@
   }
 
   .custom-pagination {
-    display: flex; /* Show pagination on small screens */
+    display: flex;
   }
 }

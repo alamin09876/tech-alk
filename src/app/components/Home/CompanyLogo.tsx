@@ -59,7 +59,7 @@ const CompanyLogo = () => {
       <div className="block md:hidden">
         <Swiper
           spaceBetween={10}
-          slidesPerView={1.5}
+          slidesPerView={2}
           loop={true}
           autoplay={{ delay: 2000, disableOnInteraction: false }}
           modules={[Autoplay]}

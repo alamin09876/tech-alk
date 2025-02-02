@@ -96,8 +96,10 @@ const CardSection = () => {
               priority
             />
             <div>
-              <h2 className="text-3xl font-bold my-4">{card.title}</h2>
-              <p className="text-base text-gray-700">{card.subtitle}</p>
+              <h2 className="text-3xl font-bold my-4 text-[rgb(11,48,91)] mb-6">
+                {card.title}
+              </h2>
+              <p className="text-base text-[rgb(22,67,119)]">{card.subtitle}</p>
             </div>
           </motion.div>
         ))}

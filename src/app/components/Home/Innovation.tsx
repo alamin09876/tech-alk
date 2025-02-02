@@ -5,8 +5,12 @@ const Innovation = () => {
   return (
     <div className="container mx-auto mt-10">
       <div>
-        <p className="text-base text-center">OUR PHILOSOPHY</p>
-        <h2 className="text-4xl text-center">Human-centred innovation</h2>
+        <p className="text-base text-center text-[#1F80F0] font-bold">
+          OUR PHILOSOPHY
+        </p>
+        <h2 className="text-6xl text-center text-[rgb(11,48,91)] mt-7">
+          Human-centred innovation
+        </h2>
       </div>
       <Image
         src={imageOne}

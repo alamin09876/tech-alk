@@ -1,5 +1,6 @@
 import CardSection from "./components/Home/CardSection";
 import CompanyLogo from "./components/Home/CompanyLogo";
+import CountLive from "./components/Home/CountLive";
 import HeroSection from "./components/Home/HeroSection";
 import ImageAndText from "./components/Home/ImageAndText";
 import Innovation from "./components/Home/Innovation";
@@ -18,7 +19,7 @@ export default function Home() {
       <Innovation />
       <CardSection />
       <SliderTextImage />
-      {/* <Technology /> */}
+      <CountLive />
       <CompanyLogo />
       <LegacySection />
       <SecondFooter />

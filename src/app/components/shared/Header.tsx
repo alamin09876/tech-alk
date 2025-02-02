@@ -219,24 +219,39 @@ const Header = () => {
 
           {/* Mobile menu */}
           {isMenuOpen && (
-            <nav className="md:hidden bg-white py-4">
-              <Link href="/solutions" className="block py-2 text-blue-600">
+            <nav className="md:hidden bg-blue-600 py-4">
+              <Link
+                href="/solutions"
+                className="block py-2 w-full mx-10 text-white"
+              >
                 Solutions
               </Link>
-              <Link href="/services" className="block py-2 text-blue-600">
+              <Link
+                href="/services"
+                className="block py-2 w-full mx-10 text-white"
+              >
                 Services
               </Link>
-              <Link href="/about" className="block py-2 text-blue-600">
+              <Link
+                href="/about"
+                className="block py-2 w-full mx-10 text-white"
+              >
                 About Us
               </Link>
-              <Link href="#" className="block py-2 text-blue-600">
-                EN
+              <Link href="#" className="py-2  text-white flex w-full mx-auto">
+                <span className="ml-48">
+                  <FaGlobe className="mt-1 mr-2" />
+                </span>
+                ENGLISH
               </Link>
               <Link
                 href="/contact"
-                className="block py-2 text-blue-600 font-medium"
+                className={`px-10 py-2 border text-white rounded mx-14 border-white hover:bg-white hover:text-blue-700 flex`}
               >
-                Contact Us
+                Contact Us{" "}
+                <span className="mt-1 ml-4">
+                  <IoIosArrowForward />
+                </span>
               </Link>
             </nav>
           )}

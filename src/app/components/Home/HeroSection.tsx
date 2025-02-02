@@ -1,7 +1,9 @@
 "use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useState } from "react";
+import { IoIosArrowForward } from "react-icons/io";
 import Wave1 from "../../../../public/assest/backgrounds/WaveLinesDesktop1.svg";
 import Wave2 from "../../../../public/assest/backgrounds/WaveLinesDesktop2.svg";
 import Wave3 from "../../../../public/assest/backgrounds/WaveLinesDesktop3.svg";
@@ -29,7 +31,7 @@ const HeroSection = () => {
 
   return (
     <div
-      className="relative bg-gradient-to-r from-blue-800 via-blue-500 to-blue-600 overflow-hidden w-full py-10"
+      className="relative bg-gradient-to-r from-blue-800 via-blue-500 to-blue-900  overflow-visible w-full py-10"
       style={{ clipPath: "polygon(0% 0%, 100% 0%, 100% 73%, 0% 95%)" }}
       onMouseMove={handleMouseMove}
     >
@@ -59,12 +61,17 @@ const HeroSection = () => {
             distributed banking solution that powers transformation.
           </p>
           <motion.button
-            type="button"
-            className="mt-6 bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg font-medium shadow-lg"
-            whileHover={{ scale: 1.05 }}
+            className="mt-6 bg-orange-500 hover:bg-orange-600 text-white px-2 py-2 lg:px-4 lg:py-2 lg:w-80 w-full mx-auto rounded font-medium shadow-lg transition-all duration-300 text-sm lg:text-base"
+            whileHover={{ scale: 1.08 }}
             whileTap={{ scale: 0.95 }}
           >
-            Reach Out to Us
+            <Link
+              href="/contact"
+              className="flex items-center justify-center space-x-2 px-16 lg:px-10"
+            >
+              <span>Reach Out to Us</span>
+              <IoIosArrowForward size={18} />
+            </Link>
           </motion.button>
         </motion.div>
 
